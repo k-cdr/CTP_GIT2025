@@ -1,0 +1,500 @@
+   46  git add changelog.txt
+   47  git commit -m "Modification du fichier changelog"
+   48  git status
+   49  git log
+   50  git add changelog.txt
+   51  git commit -m "Nouvelle fonctionnalité changelog version 2"
+   52  git log
+   53  git add changelog.txt
+   54  git commit -m "Modification final du fichier changelog.txt"
+   55  ls
+   56  git status
+   57  git log
+   58  git log --online --graph --all
+   59  git log --oneline --graph --all
+   60  git archive -o mon_projet_git_v1.zip HEAD
+   61  git log >delannoykevinTP1_gitlog.txt
+   62  history > delannoykevinTP1_historylog.txt
+   63  pwd
+   64  cd mon_premier_projet
+   65  pwd
+   66  git init
+   67  touch README.md
+   68  ls
+   69  echo "# Mon Premier Projet" > README.md
+   70  ls
+   71  git add README.md 
+   72  git commit -m "Ajout du fichier README.md"
+   73  git log
+   74  git status
+   75  git remote add origin https://github.com/KevinDln/mon_premier_projet.git
+   76  git branch -M master
+   77  git push -u origin master
+   78  git status
+   79  git log
+   80  git branch -M main
+   81  git push -u origin main
+   82  git remote add origin https://github.com/KevinDln/mon_premier_projet.git
+   83  git push -u origin main
+   84  git config --list --show-origin
+   85  git push -u origin master
+   86  git push -u origin main
+   87  git push -u origin main
+   88  git push -u origin main
+   89  git config --global http.proxy 172.16.0.253:3128
+   90  git config --global https.proxy 172.16.0.253:3128
+   91  git push -u origin main
+   92  echo "une description simple du projet : initiation a git dépot distant" >> README.md
+   93  git add README.md 
+   94  git commit -m "Mise a jour du README avec une description du projet"
+   95  git pus
+   96  git push
+   97  git checkout -b une-nouvelle-fonctionnalite
+   98  touch nouvelle-fonctionnalite.txt
+   99  echo "Ceci est une nouvelle fonctionnalité." > nouvelle-fonctionnalite.txt 
+  100  git add nouvelle-fonctionnalite.txt 
+  101  git commit -m "Ajout de la nouvelle fonctionnalité"
+  102  git push
+  103  git push -u origin une-nouvelle-fonctionnalite 
+  104  git checkout main
+  105  git merge une-nouvelle-fonctionnalite 
+  106  git push
+  107  git checkout une-nouvelle-fonctionnalite 
+  108  ls
+  109  echo "On modifie le fichier dans la branche une-nouvelle-fonctionnalite" > nouvelle-fonctionnalite.txt 
+  110  git checkout main
+  111  echo  "On modifie le fichier dans la branche main" > nouvelle-fonctionnalite.txt 
+  112  git merge une-nouvelle-fonctionnalite 
+  113  git push
+  114  git checkout une-nouvelle-fonctionnalite 
+  115  git add nouvelle-fonctionnalite.txt 
+  116  git commit -m "Modification du fichier dans la branche une-nouvelle-fonctionnalite"
+  117  git checkout main
+  118  git add nouvelle-fonctionnalite.txt 
+  119  git commit -m "Modification du fichier dans la branche main"
+  120  git merge une-nouvelle-fonctionnalite 
+  121  git checkout une-nouvelle-fonctionnalite 
+  122  git push
+  123  git checkout main
+  124  pwd
+  125  ls
+  126  git checkout -b test
+  127  ls
+  128  echo "Nouvelle ligne test" > nouvelle-fonctionnalite.txt 
+  129  git add nouvelle-fonctionnalite.txt 
+  130  git commit -m "Test modification dans branch test"
+  131  git checkout main
+  132  git checkout test
+  133  git push
+  134  git merge une-nouvelle-fonctionnalite 
+  135  git push -u origin test
+  136  git checkout main
+  137  git merge une-nouvelle-fonctionnalite
+  138  git merge test
+  139  git push
+  140  echo "Travail temporaire" >> fichier-temp.txt
+  141  git stash
+  142  git stash pop
+  143  git tag -a v1.0 -m "Version 1.0"
+  144  git push origin v1.0
+  145  git log --oneline
+  146  git status
+  147  git add fichier-temp.txt 
+  148  git commit -m "Ajout du fichier temp"
+  149  git push
+  150  git pull
+  151  ls
+  152  touch fichiertest.txt
+  153  ls
+  154  echo "On ajoute un test pour le test" > fichiertest.txt 
+  155  git add fichiertest.txt 
+  156  git commit -m "c pour fer le test"
+  157  git commit --amend -m "C'est pour faire le test"
+  158  git log --graph --oneline -decorate --all
+  159  git log --graph --oneline --decorate --all
+  160  git push
+  161  git fetch
+  162  git checkout nouveau 
+  163  git branch -d nouveau
+  164  git branch -d nouveau
+  165  git checkout main
+  166  git branch nouveautest
+  167  git branch -d nouveautest
+  168  git push origin --delete nouveau
+  169  git checkout -b branch1
+  170  ls
+  171  echo "MODIFICATION DANS BRANCH1" >> fichiertest.txt 
+  172  git add fichiertest.txt 
+  173  git commit -m "Modification dans la branche branch1"
+  174  git push
+  175  git push -u origin branch1
+  176  git checkout -b branch2
+  177  ls
+  178  echo fichiertest.txt
+  179  echo "On ajoute une ligne supplémentaire" >> fichiertest.txt
+  180  ls
+  181  git checkout branch1
+  182  git merge branch2
+  183  git checkout branch2
+  184  git add fichiertest.txt 
+  185  git commit -m "Modification dans la branche branch2"
+  186  git merge branch1
+  187  git merge branch2
+  188  git checkout main
+  189  git merge branch1
+  190  git merge branch2
+  191  git rebase main
+  192  git checkout branch1
+  193  git rebase main
+  194  ls
+  195  touch changements.txt
+  196  echo "On ajoute des changements dans le fichier" >> changements.txt 
+  197  git stash
+  198  git add changements.txt 
+  199  git stash
+  200  git commit --amend -m "Changement a mettre de coté"
+  201  git stash
+  202  git stash list
+  203  git stash pop
+  204  git tag -a v2.0 -m "Version 2.0"
+  205  git tag v2.1
+  206  git push --tags
+  207  git bisect start
+  208  git bisect bad
+  209  git bisect good fde6e2a
+  210  git status
+  211  git bisect reset
+  212  echo "echo 'Vérification avant commit'" > .git/hooks/pre-commit
+  213  chmod +x .git/hooks/pre-commit
+  214  git push
+  215  git flow init
+  216  git status
+  217  git push
+  218  git restore --staged changements.txt 
+  219  git status
+  220  git add changements.txt 
+  221  git push
+  222  git commit -m "changement.txt"
+  223  ls
+  224  git flow init
+  225  git status
+  226  git add changements.txt 
+  227  git commit -m "Add changements"
+  228  ls -a
+  229  git commit -m "Add changements"
+  230  git flow init
+  231  git flow feature start main
+  232  git flow feature finish main
+  233  git checkout main
+  234  git push
+  235  git diff main une-nouvelle-fonctionnalite 
+  236  git status
+  237  git log
+  238  git log --graph --oneline --decorate --all
+  239  git diff 1aac987 0c83cd0
+  240  touch .github/workflows/main.yml
+  241  ls
+  242  ls -a
+  243  cs .git
+  244  cd .git
+  245  ls
+  246  cd ..
+  247  cd .github
+  248  ls
+  249  cd workflows/
+  250  touch main.yml
+  251  cd ../..
+  252  ls
+  253  cd .github
+  254  cd workflows/
+  255  ls
+  256  git add main.yml 
+  257  cd ../..
+  258  git add .github
+  259  git commit -m "Ajout du dossier .github ? "
+  260  git push
+  261  git reflog
+  262  ls
+  263  touch encore.txt
+  264  echo "Encore un nouveau fichier" >> encore.txt 
+  265  add encore.txt
+  266  git add encore.txt
+  267  git commit -m encore.txt 
+  268  git status
+  269  git reflog
+  270  git reset --soft HEAD~1
+  271  git reflog
+  272  git checkout 06a0f42
+  273  git push
+  274  git checkout main
+  275  push
+  276  git push
+  277  git blame encore.txt
+  278  git status
+  279  git log
+  280  git add encore.txt
+  281  ls
+  282  git add fichiertest.txt 
+  283  git commit -m 
+  284  git commit -m " "
+  285  git status
+  286  git blame fichiertest.txt
+  287  git log > delannoykevinTP2_gitlog.txt
+  288  history > delannoykevinTP2_historylog.txt
+  289  ls
+  290  cd ..
+  291  ls
+  292  cd ..
+  293  ls
+  294  cd ..
+  295  ls
+  296  cd xampp/
+  297  ls
+  298  cd htdocs/
+  299  ls
+  300  cd greta
+  301  ls
+  302  cd PHP
+  303  ls
+  304  cd Projet/
+  305  ls
+  306  ls
+  307  git init
+  308  git add css
+  309  git add img
+  310  git add php
+  311  git add videos
+  312  git commit -m "Initialisation des dossiers du projet"
+  313  git remote add origin https://github.com/KevinDln/popstreaming
+  314  git push
+  315  git branch -M main
+  316  git push -u origin main
+  317  git pull
+  318  git push -u origin main
+  319  git pull
+  320  git pull
+  321  git push -u origin main
+  322  git add css
+  323  git add img
+  324  git add php
+  325  git add videos
+  326  git commit -m "Initialisation des dossiers du projet"
+  327  git push -u origin main
+  328  git pull
+  329  git status
+  330  git log
+  331  git push 
+  332  git pull$
+  333  git pull
+  334  git push -u origin main
+  335  git pull origin main
+  336  git pull origin main --allow-unrelated-histories 
+  337  git push -u origin main
+  338  git init
+  339  git add php
+  340  git commit -m "Ajout de l'API TMDB"
+  341  git push
+  342  ls
+  343  git init
+  344  git pull origin main
+  345  ls
+  346  cd php
+  347  ls
+  348  add createtables.php
+  349  git add createtables.php
+  350  git commit -m "Ajout de la table commentaires dans la base de données"
+  351  git push origin main
+  352  git clone https://github.com/KevinDln/TPGIT_GRP.git
+  353  ls
+  354  cd TPGIT_GRP/
+  355  ls
+  356  add bethune.jpg 
+  357  git add bethune.jpg 
+  358  git add auchel.jpeg 
+  359  git add index_tpgit.html 
+  360  git commit -m "initial commit"
+  361  git push
+  362  git add index_tpgit.html 
+  363  git commit -m "Changement class libercourt en contenu"
+  364  git push
+  365  ls
+  366  cd
+  367  ls
+  368  git clone https://github.com/yasminsalahe/TP2_GRP.git
+  369  cd TP2_GRP/
+  370  ls
+  371  ls
+  372  git pull
+  373  git pull origin main
+  374  ls
+  375  git pull
+  376  ls
+  377  git add css
+  378  git add css
+  379  git add css
+  380  git commit -m "Modification du footer classique sans CSS"
+  381  git push
+  382  ls
+  383  git pull
+  384  ls
+  385  git add includes/
+  386  git commit -m "Modification du footer"
+  387  git push
+  388  ls
+  389  git add includes/
+  390  git commit -m "Ajout d'une page de contact et de mention légales sans CSS, et liaison des deux fichiers dans le footer"
+  391  git push
+  392  git pull
+  393  ls
+  394  git add includes/
+  395  git commit -m "Ajout d'une page de contact et de mention légales sans CSS, et liaison des deux fichiers dans le footer"
+  396  git push
+  397  ls
+  398  git pull https://github.com/KevinDln/popstreaming.git
+  399  git pull https://github.com/KevinDln/popstreaming.git
+  400  git pull https://github.com/KevinDln/popstreaming.git
+  401  git pull origin main
+  402  git pull https://github.com/KevinDln/popstreaming.git
+  403  git pull
+  404  git init
+  405  ls
+  406  cd ..
+  407  ks
+  408  ls
+  409  cd ..
+  410  ls
+  411  git pull
+  412  git pull https://github.com/KevinDln/popstreaming.git
+  413  git init
+  414  git pull https://github.com/KevinDln/popstreaming.git
+  415  git pull origin main
+  416  ls
+  417  git pull 
+  418  git remote add https://github.com/KevinDln/popstreaming.git
+  419  git add remote https://github.com/KevinDln/popstreaming.git
+  420  git pull 
+  421  git pull https://github.com/KevinDln/popstreaming.git
+  422  git init
+  423  git remote add https://github.com/KevinDln/popstreaming.git
+  424  git add remote https://github.com/KevinDln/popstreaming.git
+  425  git remote add origin https://github.com/KevinDln/popstreaming.git
+  426  git pull 
+  427  git pull origin main
+  428  ls
+  429  cd php
+  430  ls
+  431  git add tmdb
+  432  git commit -m "Modifications api et classes pour fonctionner au greta et également a la maison"
+  433  git push 
+  434  git push origin main
+  435  git push origin master
+  436  checkout main
+  437  git checkout main
+  438  git push origin main
+  439  git merge master main
+  440  git checkout Kevin
+  441  git checkout Kevin
+  442  ls
+  443  git pull
+  444  ls
+  445  cd tmdb/
+  446  ls
+  447  cd .. 
+  448  git add tmdb/
+  449  git commit -m "Début de créations des fonctions a utiliser"
+  450  git push Kevin
+  451  git push origin Kevin
+  452  ls
+  453  cd php
+  454  ls
+  455  ls
+  456  cd ..
+  457  ls
+  458  git status
+  459  git status
+  460  ls -la
+  461  less .gitignore
+  462   git status
+  463  git rm php/tmdb/cache/*
+  464  git status
+  465  git add .gitignore 
+  466  git add php/tmdb/createtable.php
+  467  git add createtable.php
+  468  git add php/createtables.php 
+  469  git add php/tmdb/addmovies.php 
+  470  git add .
+  471  git commit -m "Ajout des pages d'affichages de films et de séries et également des fonctions"
+  472  git push origin Kevin 
+  473  git push -u origin 
+  474  git push -u origin Kevin
+  475  git status
+  476  git fetch
+  477  git push origin Kevin 
+  478  git push -u origin Kevin
+  479  git pull
+  480  git push origin Kevin 
+  481  ls
+  482  git checkout main
+  483  git pull origin main
+  484  ls
+  485  git checkout Kevin
+  486  git pull origin main
+  487  git status
+  488  gi pull origin main
+  489  git pull origin main
+  490  git status
+  491  git checkout main
+  492  git checkout Kevin
+  493  git add .
+  494  git commit -m "16/06/25"
+  495  git status
+  496  git push origin Kevin
+  497  git checkout main
+  498  git fetch origin
+  499  git merge Kevin
+  500  git push origin
+  501  git init
+  502  git remote add https://github.com/KevinDln/CTP_GIT2025.git
+  503  git add remote https://github.com/KevinDln/CTP_GIT2025.git
+  504  git pull https://github.com/KevinDln/CTP_GIT2025.git
+  505  ls
+  506  git checkout Kevin
+  507  git checkout -b Kevin
+  508  ls
+  509  git status
+  510  git add kevindelannoy_contribution.html 
+  511  git commit -m "Structure de base html"
+  512  git push origin Kevin
+  513  git push Kevin
+  514      git push --set-upstream Kevin Kevin
+  515  git push origin Kevin
+  516  git push -u origin Kevin
+  517  git remote add origin https://github.com/KevinDln/CTP_GIT2025.git
+  518  git push origin Kevin
+  519  git status
+  520  git add .
+  521  git commit -m "Ajout d'un fichier css avec code simple"
+  522  git push origin Kevin
+  523  git status
+  524  git add .
+  525  git commit -m "Ajout d'une image et déplacement des fichiers dans leur dossier respectif"
+  526  git push origin Kevin
+  527  git status
+  528  git add html/kevindelannoy_contribution.html 
+  529  git commit -m "Ajout du titre de niveau 1"
+  530  git push origin Kevin
+  531  git add html/kevindelannoy_contribution.html 
+  532  git commit -m "Ajout d'une liste des loisirs"
+  533  git push origin Kevin
+  534  git add html/kevindelannoy_contribution.html 
+  535  git commit -m "Ajout du paragraphe sur le projet professionnel"
+  536  git push origin Kevin
+  537  git add html/kevindelannoy_contribution.html
+  538  git commit -m "Ajout du footer et modification css + paragraphe projet professionnel"
+  539  git push origin Kevin
+  540  git checkout main
+  541  git log > delannoykevinCTP_gitlog.txt
+  542  history > delannoykevinCTP_historylog.txt
+  543  git archive -o kevindelannoy_CTP.zip HEAD
+  544  git log > delannoykevinCTP_gitlog.txt
+  545  history > delannoykevinCTP_historylog.txt
