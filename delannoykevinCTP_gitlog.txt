@@ -1,0 +1,53 @@
+commit e7df709e4fda81e1a8185e2432cad47055dad46a
+Author: Kevin <kevin.delannoy@outlook.fr>
+Date:   Tue Jun 17 09:04:04 2025 +0200
+
+    Ajout du footer et modification css + paragraphe projet professionnel
+
+commit f4a60c3101623edf98da645103a7174b3b1eb955
+Author: Kevin <kevin.delannoy@outlook.fr>
+Date:   Tue Jun 17 08:58:53 2025 +0200
+
+    Ajout du paragraphe sur le projet professionnel
+
+commit c275600a9e1a409711b6204883826582a5350a85
+Author: Kevin <kevin.delannoy@outlook.fr>
+Date:   Tue Jun 17 08:55:21 2025 +0200
+
+    Ajout d'une liste des loisirs
+
+commit 2abafd623ad1b1c8a1673219f1341f0c0f520502
+Author: Kevin <kevin.delannoy@outlook.fr>
+Date:   Tue Jun 17 08:51:37 2025 +0200
+
+    Ajout du titre de niveau 1
+
+commit abbf1fcf75d08d170c48f60ac15a75dd48c1bf45
+Author: Kevin <kevin.delannoy@outlook.fr>
+Date:   Tue Jun 17 08:50:22 2025 +0200
+
+    Ajout d'une image et déplacement des fichiers dans leur dossier respectif
+
+commit 59f007e59d171d005937532d55b430bf53289692
+Author: Kevin <kevin.delannoy@outlook.fr>
+Date:   Tue Jun 17 08:46:24 2025 +0200
+
+    Ajout d'un fichier css avec code simple
+
+commit 283fafe4be48ad4fc2b3d4a5d943cef649c125b0
+Author: Kevin <kevin.delannoy@outlook.fr>
+Date:   Tue Jun 17 08:35:45 2025 +0200
+
+    Structure de base html
+
+commit 016ef7d9a9be1366bbf52c747792ee83afb23004
+Author: Kevin Caudron <49903713+k-cdr@users.noreply.github.com>
+Date:   Wed Jun 11 13:59:26 2025 +0200
+
+    Update README.md
+
+commit 977f2f416a1a2fb8056db208cb46cedeb9798179
+Author: Kevin Caudron <49903713+k-cdr@users.noreply.github.com>
+Date:   Wed Jun 11 13:59:00 2025 +0200
+
+    Initial commit
