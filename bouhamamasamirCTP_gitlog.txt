@@ -1,0 +1,59 @@
+commit 8c9dd0654b76154597e5213926f590c48c9ecd52
+Author: Samir <samirb2707@hotmail.fr>
+Date:   Tue Jun 17 09:00:49 2025 +0200
+
+    Ajout de css et ajoiu
+
+commit 8dd81683812b1546ea80586e060fba8d7d671bbe
+Author: Samir <samirb2707@hotmail.fr>
+Date:   Tue Jun 17 08:55:25 2025 +0200
+
+    Ajout d'un bas de page
+
+commit 731a8a1695cbb2809445084c278b4c5cc544aee7
+Author: Samir <samirb2707@hotmail.fr>
+Date:   Tue Jun 17 08:53:55 2025 +0200
+
+    Ajout d'un paragraphe pro
+
+commit a7ea1bf731601257f9612f7b6db0c76cae7b4060
+Author: Samir <samirb2707@hotmail.fr>
+Date:   Tue Jun 17 08:49:48 2025 +0200
+
+    Ajout d'une liste de mes loisirs
+
+commit 33a0479717e78f2f311aa7823748787ffceb59bb
+Author: Samir <samirb2707@hotmail.fr>
+Date:   Tue Jun 17 08:49:05 2025 +0200
+
+    Ajout d'un titre
+
+commit c918ef397d32e151845c0884949078fb3e3a59f2
+Author: Samir <samirb2707@hotmail.fr>
+Date:   Tue Jun 17 08:47:52 2025 +0200
+
+    Ajout d'une image
+
+commit dab4de16552bc2be2a887a2519a892d93e5bf0cb
+Author: Samir <samirb2707@hotmail.fr>
+Date:   Tue Jun 17 08:44:18 2025 +0200
+
+    Ajout d'un fichier css
+
+commit 7f5cd6df1d23ae8cf5f0242fb63174772a132196
+Author: Samir <samirb2707@hotmail.fr>
+Date:   Tue Jun 17 08:43:33 2025 +0200
+
+    Ajout d'une structure de base d'une page HTML
+
+commit 016ef7d9a9be1366bbf52c747792ee83afb23004
+Author: Kevin Caudron <49903713+k-cdr@users.noreply.github.com>
+Date:   Wed Jun 11 13:59:26 2025 +0200
+
+    Update README.md
+
+commit 977f2f416a1a2fb8056db208cb46cedeb9798179
+Author: Kevin Caudron <49903713+k-cdr@users.noreply.github.com>
+Date:   Wed Jun 11 13:59:00 2025 +0200
+
+    Initial commit

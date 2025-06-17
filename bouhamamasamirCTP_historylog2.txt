@@ -1,0 +1,500 @@
+   54  git checkout distante
+   55  git branch --d distante
+   56  git checkout main
+   57  git branch --d distante
+   58  git push origin --delete distante
+   59  git checkout -b secondary1
+   60  git checkout -b secondary2
+   61  git push
+   62  git push -u origin secondary2
+   63  git push -u origin secondary1
+   64  touch text1.txt
+   65  ls
+   66  text2.txt
+   67  touch text2.txt
+   68  ls
+   69  echo "Bonjour">text1.txt
+   70  echo "Bonjour">text2.txt
+   71  git add text1.txt
+   72  git commit -m "Ajout du fichier text1.txt"
+   73  git add text2.txt
+   74  git commit -m "Ajout du fichier text2.txt"
+   75  git push
+   76  echo "Bonjour">text1.txt
+   77  git add text2.txt
+   78  echo "Bonjour">text2.txt
+   79  git rebase main
+   80  git push
+   81  git checkout secondary1
+   82  git add text2.txt
+   83  touch text2.txt
+   84  git add text2.txt
+   85  git commit -m "Ajout de text2.txt"
+   86  echo "Bonjour oui">text2.txt
+   87  git checkout secondary1
+   88  git checkout secondary2
+   89  git add text2.xt
+   90  git checkout secondary1
+   91  git add text2.txt
+   92  git commit -m "Modification de text2.txt"
+   93  git checkout secondary2
+   94  echo "Bonjour non">text2.txt
+   95  git add text2.txt
+   96  git commit -m "Modification de text2.txt"
+   97  git checkout secondary1
+   98  git merge secondary2
+   99  git merge secondary2
+  100  git checkout secondary1
+  101  echo "Bonjour oui">text2.txt
+  102  git add text2.txt
+  103  git commit -m "Modification de text2.txt"
+  104  git merge secondary2
+  105  git stash
+  106  git stash list
+  107  git stash pop
+  108  git checkout main
+  109  git tag -a v2.0 -m "Version 2.0"
+  110  git tag v2.1
+  111  git push --tags
+  112  git bisect start
+  113  git bisect good 9307db0
+  114  echo "echo 'Vérification avant commit'"> .git/hooks/pre-commit
+  115  chmod +x .git/hooks/pre-commit
+  116  gid status
+  117  git status
+  118  git flow init
+  119  git flow feature start main
+  120  ls
+  121  mkdir .github
+  122  cd .github
+  123  mkdir workflows
+  124  cd workflows
+  125  ls
+  126  touch main.yml
+  127  ls
+  128  git diff main feature-branch
+  129  git diff main Bug
+  130  git diff main Bugfix
+  131  git diff main secondary1
+  132  git log --oneline
+  133  git diff 234360f 1aee744 
+  134  git reflog
+  135  git reset --soft HEAD ~1
+  136  git reflog
+  137  git checkout 234360f 
+  138  git push
+  139  git checkout main
+  140  git submodule add https://github.com/Asurame27/Mon-Premier-Projet
+  141  git submodule init
+  142  git submodule update
+  143  git checkout secondary
+  144  git checkout secondary1
+  145  git blame text2.txt
+  146  cd../..
+  147  pwd
+  148  cd ../
+  149  pwd
+  150  cd ../
+  151  pwd
+  152  git blame text2.txt
+  153  git rebase -i HEAD~2
+  154  git add text2.txt
+  155  git commit _m "Modification de text2.txt"
+  156  git commit -m "Modification de text2.txt"
+  157  git rebase -i HEAD~5
+  158  git log>bouhamamasamirTP2_gitlog.txt
+  159  history>bouhamamasamirTP2_historylog.txt
+  160  git init
+  161  cd../
+  162  cd ..
+  163  cd..
+  164  cd ..
+  165  cd ..
+  166  cd ..
+  167  cd H/Projet
+  168  mkdir PHP
+  169  cd PHP
+  170  git config --global http.proxy 172.16.0.253:3128
+  171  git config --global https.proxy 172.16.0.253:3128
+  172  git remote add origin https://github.com/Asurame27/Ilo
+  173  git status
+  174  cd..
+  175  cd ..
+  176  git remote add origin https://github.com/Asurame27/Ilo.git
+  177  touch README.md
+  178  git add README.md
+  179  git init
+  180  git add README.md
+  181   git config --global --add safe.directory '%(prefix)///kwartz-server/samir.bouhamama/Projet'
+  182  git add README.md
+  183  git commit -m "Ajout du fichier README.md"
+  184  git remote add origin https://github.com/Asurame27/Ilo.git
+  185  checkout -b samir
+  186  git checkout -b samir
+  187  git push
+  188  git push -u origin samir 
+  189  git checkout -b main
+  190  git checkout -b nora
+  191  git checkout -b paul
+  192  git checkout -b yasmin
+  193  git checkout -b cath
+  194  git push -u origin nora
+  195  git push -u origin paul
+  196  git push -u origin yasmin
+  197  git push -u origin cath
+  198  git push -u origin main
+  199  git checkout samir
+  200  git checkout samir
+  201  git add Ath_html.php
+  202  git add Auth_html.php
+  203  git add Connexion.php
+  204  git Create_table.php
+  205  git add Create_table.php
+  206  git commit -m "Ajout de fichier Auth_html.php , Connexion.php , Create-table.php"
+  207  git push -u origin samir
+  208  git rm Auth_html.php
+  209  git push -u origin samir
+  210  git commit -m "Suppression de fichier inutile"
+  211  git push -u origin samir
+  212  git rm Connexion.php Create_table.php README.md
+  213  git commit -m "Suppression des fichiers inutiles"
+  214  git push u-origin samir
+  215  git push -u origin samir
+  216  cd../..
+  217  cd ../..
+  218  cd C/xampp/htdocs/greta/Projet
+  219  git init
+  220  git add auth_html.php connexion.php create_database.php
+  221  git commit -m "Ajout des bons fichiers"
+  222  git push -u origin samir
+  223  git checkout samir
+  224  git remote add origin https://github.com/Asurame27/Ilo.git
+  225  git checkout samir
+  226  git config --global http.proxy 172.16.0.253:3128
+  227  git config --global https.proxy 172.16.0.253:3128
+  228  git remote add origin https://github.com/Asurame27/Ilo.git
+  229  git checkout samir
+  230  git fetch origin samir
+  231  git fetch origin main
+  232  git fetch origin Main
+  233  git checkout samir
+  234  git push -u origin samir
+  235  git add auth_html.php connexion.php create_database.php
+  236  ls
+  237  ls
+  238  git push -u origin samir
+  239  git add auth_html.php connexion.php create_database.php
+  240  ls
+  241  ls
+  242  ls
+  243  git add Auth_html.php Connexion.php Create_database.php  README.md
+  244  git commit -m "Ajout des fichiers Auth_html.php Connexion.php Create_database.php  README.md"
+  245  git push -u origin samir
+  246  git add create_database.php
+  247  git commit -m "Modification du fichier create_database"
+  248  git push -u origin samir
+  249  git add Create_database.php
+  250  git commit -m "Modification du fichier create_database"
+  251  git push -u origin samir
+  252  ls
+  253  git add PHP tmdb
+  254  git commit -m "Ajout des dossier PHP et tmbd"
+  255  git push -u origin samir
+  256  git config -l
+  257  git rm Auth_html.php Connexion.php Create_database.php
+  258  git commit -m "Suppression de fichier"
+  259  git push -u origin sam
+  260  git touch .gitignore
+  261  touch .gitignore
+  262  git status
+  263  git rm tmdb/cache/*
+  264  git status
+  265  git add .
+  266  git commit -m "Ajout de .gitignore"
+  267  git status
+  268  git status
+  269  git push -u origin samir
+  270  cd ../../..
+  271  cd xampp/htdocs/Projet
+  272   w
+  273  cd ../..
+  274  cd C
+  275  cd xampp/htdocs/Projets
+  276  cd xampp/htdocs/Projet
+  277  cd checkout samir
+  278  git init
+  279  git checkout samir
+  280  git pull 
+  281  git add Ilo
+  282  ls
+  283  git add Projet
+  284  cd ../
+  285  git add Projet
+  286  cd Projet
+  287  git add Projet
+  288  git add Projet
+  289  pwd
+  290  git checkout samir
+  291  git add Projet
+  292  git add PHP tmbd
+  293  git add PHP tmdb
+  294  git commit -m "Modification des dossiers"
+  295  git push -u origin samir
+  296  git add PHP 
+  297  git commit -m " Ajout du fichier insert_database.php"
+  298  git push -u origin samir
+  299  cd ../..
+  300  pwd
+  301  cd C/xampp/htdocs/Projets
+  302  cd C/xampp/htdocs/Projet
+  303  ls
+  304  cd tmdb
+  305  ls
+  306  cd classes
+  307  ls
+  308  cd ../..
+  309  cd PHP
+  310  ls
+  311  cd ..
+  312  cd tmdb
+  313  cd categories
+  314  ls
+  315   cd ../..
+  316  pwd
+  317  *cd ..
+  318  cd ..
+  319  pwd
+  320  git clone https://github.com/Asurame27/TPGIT_GRP.git
+  321  git -b branch samir
+  322  git checkout -b samir
+  323  git fetch
+  324  pwd
+  325  ls
+  326  cd TPGIT_GRP
+  327  LS
+  328  git add TPGIT_GRP
+  329  git status
+  330  ls
+  331  git add images index_tpgit.html
+  332  git commit -m "Ajouts de fichiers"
+  333  git status
+  334  git push
+  335  git pull
+  336  git status
+  337  git status
+  338  git add images index_tpgit.html
+  339  git commit -m "Ajouts de fichiers"
+  340  git push
+  341  git add images
+  342  git commit -m " Modification des images"
+  343  git push
+  344  cd ..
+  345  pwd
+  346  git clone https://github.com/yasminsalahe/TP2_GRP.git
+  347  git pull
+  348  pwd
+  349  cd Projet
+  350  ls
+  351  git ad PHP tmdb
+  352  git add PHP tmdb
+  353  git commit -m "Modification fichier insert_database.php et MovieAPI.php"
+  354  git status
+  355  git push -u origin samir
+  356  git pull
+  357  cd ..
+  358  ls
+  359  cd TP2_GRP
+  360  git pull
+  361  ls
+  362  git add index.php
+  363  git commit -m "ERREUR SYSTEME git add index.php!"
+  364  git push
+  365  git pull
+  366  git pull
+  367  git add *
+  368  git commit -m "Une modfication majeure a eut lieu"
+  369  git push
+  370  git fetch
+  371  git add *
+  372  git commit -m "Une modfication majeure a eut lieu"
+  373  git push
+  374  git pull
+  375  git add *
+  376  git commit -m "Une modfication majeure a eut lieu"
+  377  git push
+  378  pwd
+  379  ls
+  380  git add header.jpg includes
+  381  git commit -m "Modification"
+  382  git push
+  383  git pull
+  384  git add header.jpg includes
+  385  git commit -m "Modification"
+  386  git push
+  387  pwd
+  388  cd ..
+  389  pwd
+  390  cd Projet
+  391  git branch
+  392  git add * 
+  393  git commit -m "Ajout et modification"
+  394  git push
+  395  git checkout main
+  396  ls
+  397  git checkout samir
+  398  git add PHP tmdb
+  399  git commit -m "Ajout des fichiers"
+  400  git push -u origin main
+  401  git push -u origin Main
+  402  git push -u origin Master
+  403  git add PHP tmdb
+  404  git status
+  405  git add *
+  406  git status
+  407  git commit -m "Ajout des fichiers"
+  408  git status
+  409  git push -u origin Main
+  410  git push -u origin main
+  411  git push -u origin Main
+  412  git branch
+  413  git push -u origin master
+  414  ls
+  415  git add *
+  416  git commit -m "Ajout des fichiers"
+  417  cd ..
+  418  git clone https://github.com/Asurame27/Ilo.git
+  419  git init
+  420  git branch
+  421  git config --global --add safe.directory C:/xampp/htdocs
+  422  git branch
+  423  cd Ilo
+  424  git branch
+  425  git add *
+  426  git commit -m "Ajout de fichiers"
+  427  git checkout samir
+  428  git add *
+  429  git commit -m "Ajout de fichiers"
+  430  git push -u origin Main
+  431  git status
+  432  ls
+  433  git add PHP tmdb
+  434  git commit -m "Ajout de fichiers"
+  435  git push -u origin Main
+  436  git pull origin Main
+  437  git merge samir
+  438  git push origin Main
+  439  git add .
+  440  git commit -m "Ajout de fichiers"
+  441  git checkout Main
+  442  git pull origin Main
+  443  git merge samir
+  444  git push origin Main
+  445  pwd
+  446  cd c/xampp/htdocs/Ilo
+  447  cd PHP
+  448  git status
+  449  git status
+  450  git rm  phpinfo.php testconnexion.php
+  451  git status
+  452  git commit -m "Suppression de fichiers"
+  453  git push
+  454  git checkout samir
+  455  git checkout Main
+  456  git checkout samir
+  457  git branch
+  458  git checkout Main
+  459  git checkout samir
+  460  git checkout Main
+  461  git checkout samir
+  462  git add .
+  463  git commit _m "Ajout de fichiers"
+  464  git commit -m "Ajout de fichiers"
+  465  git status
+  466  cd ..
+  467  git add .
+  468  git status
+  469  git commit -m "Ajout de fichiers"
+  470  git status
+  471  git push -u origin samir
+  472  git checkout Main
+  473  git pull origin Main
+  474  git merge samir
+  475  git push origin Main
+  476  cd ../..
+  477  cd C/xampp/htdocs/Ilo
+  478  git checkout samir
+  479  git status
+  480  git add .
+  481  git commit -m "Modification"
+  482  git push
+  483  git status
+  484  git checkout Main
+  485  git status
+  486  git pull origin Main
+  487  git checkout samir
+  488  git status
+  489  git add .
+  490  git pull
+  491  git status
+  492  git checkout samir
+  493  git add .
+  494  git commit -m "Ajout"
+  495  git push
+  496  git status
+  497  git status
+  498  git pull
+  499  git status
+  500  git pull
+  501  git clone https://github.com/Asurame27/CTP_GIT2025.git
+  502  git checkout -b ctp
+  503  pwd
+  504  ls
+  505  cd CTP_GIT2025
+  506  git checkout -b ctp
+  507  cd ..
+  508  git branch -d ctp
+  509  cd CTP_GIT2025
+  510  git status
+  511  touch bouhamama_contribution.html
+  512  index1.html
+  513  touch index1.html
+  514  touch bouhamama_style.css
+  515  ls
+  516  git add bouhamama_contribution.html
+  517  git commit -m "Ajout d'une structure de base d'une page HTML"
+  518  git status
+  519  git add bouhamama_style.css
+  520  git commit -m "Ajout d'un fichier css"
+  521  git status
+  522  git status
+  523  git add ichigo.jpg
+  524  git commit -m "Ajout d'une image"
+  525  git status
+  526  git add bouhamama_contribution.html
+  527  git commit -m "Ajout d'un titre"
+  528  git add bouhamama_contribution.html
+  529  git commit -m "Ajout d'une liste de mes loisirs"
+  530  git commit -m "Ajout d'une liste de mes loisirs"
+  531  git add bouhamama_contribution.html
+  532  git commit -m "Ajout d'un paragraphe pro"
+  533  git add bouhamama_contribution.html
+  534  git commit -m "Ajout d'un bas de page"
+  535  git status
+  536  git add .
+  537  git commit -m "Ajout de css et ajoiu"
+  538  git status
+  539  git push -u origin ctp
+  540  git log --oneline
+  541  git log > bouhamamasamirCTP_gitlog.txt
+  542  history > bouhamamasamirCTP_history.txt
+  543  git status
+  544  git add .
+  545  git status
+  546  git commit -m "Ajout de nouveau fichier"
+  547  git push
+  548  git pull
+  549  git status
+  550  git rm index1.html
+  551  git commit -m "Suppression d'un fichier index1.html"
+  552  git log > bouhamamasamirCTP_gitlog2.txt
+  553  history > bouhamamasamirCTP_historylog2.txt
