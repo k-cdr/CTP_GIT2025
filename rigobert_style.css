@@ -8,3 +8,12 @@ html {
     width: 500px;
     height: auto;
 }
+
+ul {
+    font-weight: bold;
+}
+
+ul li {
+    font-weight: normal;
+    list-style-type: none;
+}
