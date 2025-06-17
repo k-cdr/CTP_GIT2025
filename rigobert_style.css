@@ -17,3 +17,9 @@ ul li {
     font-weight: normal;
     list-style-type: none;
 }
+
+p {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
